@@ -1,168 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mavericks</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/2afbc17d79.js" crossorigin="anonymous"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Protest+Strike&display=swap" rel="stylesheet">
+{% extends 'base.html' %}
 
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <!------Navbar and responsive header------->
-    <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top  myNavClass">
-            <div class="container-fluid">
-            <a class="navbar-brand logo-txt mav-color fw-bold fs-3" href="/">Mavericks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link mav-color" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mav-color " href="/about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mav-color " href="/team.html">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mav-color " href="/projects.html">Project</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mav-color " href="/contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mav-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item mav-color" href="/alumni.html">Alumni</a></li>
-                    <li><a class="dropdown-item mav-color" href="/gallery.html">Gallery</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item mav-color" href="#">Want to be a part</a></li>
-                    </ul>
-                </li>
-                </ul>
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" id="frm-search" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-            </div>
-        </nav>
-    </div>
-
+{% block content %}
     <!--############## MEMBER PART ##################-->
-            
-    <div class="container mt-5 pt-5">
-        <div class="member text-center">
-            <h1>Member</h1>
+    <div class="container mt-5 mb-5"  style="padding-top: 60px;">
+        <div class="member text-center mb-3">
+            <h2 class="gradient-text">Teams</h2>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card profile-card">
-                    <img src="assets\team-img\SUSHANT SHANKAR.png" class="card-img-top" alt="Bhawana Sinha">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Bhawana Sinha</h5>
-                        <p class="card-text">Destination</p>
-                        <div class="social-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="row" id="project-grid">
+        {% for member in members %}
+        <div class="col-md-2 mb-4">
+          <div class="card h-100">
+            <img src="{{ url_for('static', filename=member.img_url) }}" class="card-img-top" alt="{{ member.title }}">
+            <div class="card-body text-center d-flex flex-column">
+              <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
+              <p class="card-text">{{member.designation }}</p>
+              <p class="card-text">{{member.batch }}</p>
+              <div class="mt-auto">
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="col-md-3">
-                <div class="card profile-card">
-                    <img src="assets\team-img\SUSHANT SHANKAR.png" class="card-img-top" alt="Ram Kumar">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Ram Kumar</h5>
-                        <p class="card-text">Destination</p>
-                        <div class="social-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="col-md-3">
-                <div class="card profile-card">
-                    <img src="assets/team-img/SUSHANT SHANKAR.png" class="card-img-top" alt="Sushant Shankar">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Sushant Shankar</h5>
-                        <p class="card-text">Destination</p>
-                        <div class="social-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card profile-card">
-                    <img src="assets\team-img\SUSHANT SHANKAR.png" class="card-img-top" alt="Sushant Shankar">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Sushant Shankar</h5>
-                        <p class="card-text">Destination</p>
-                        <div class="social-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        
-    </div>
- <!-- Footer Section -->
- <footer class="footer mt-auto py-3 bg-white text-dark">
-    <div class="row align-items-center">
-        <div class="col-md-4 text-left">
-            <img src="assets/images/mavericks-removebg-preview.png" alt="Mavericks Logo" class="footer-logo">
-            <div class="footer-brand">
-                <span>Mavericks</span>
-            </div>
+        {% endfor %}
         </div>
-        <div class="col-md-4 text-left">
-            <img src="assets/images/sliet.jpg" alt="Logo 2" class="footer-logo">
-            <div class="footer-brand">
-                <span>Sant Longowal Institute of Engineering and Technology</span>
-            </div>
-        </div>
-        <div class="col-md-4 text-center">
-            <h5>Contact Us</h5>
-            <p>Email: info@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <div class="social">
-                <a href="#"><i class="fa-brands fa-instagram social-icon-me"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter social-icon-me"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin social-icon-me"></i></a>
-                <a href="#"><i class="fa-brands fa-github social-icon-me"></i></a>
-            </div>
-            <div class="text-center mt-3">
-                <p class="mb-0">&copy; 2025 Mavericks | All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+    </div>        
+ 
+{% endblock %}

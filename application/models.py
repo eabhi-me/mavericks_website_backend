@@ -1,8 +1,21 @@
-from application import app, db
+from application import app, db, login_manager
 from application import bcrypt
 from flask_bcrypt import generate_password_hash
+from flask_login import UserMixin
+# imporitg the env
+import os
+from application import load_dotenv
+
+# Imporitg the library that mage all user login method
+from flask_login import UserMixin
+
+# adding the decorator as loder that chect the state of login
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
 # creating the user table
-class User(db.Model):
+class User(db.Model,UserMixin):
     id = db.Column(db.Integer(),primary_key=True)
     username = db.Column(db.String(30), unique=True, nullable=False)
     email_address = db.Column(db.String(50), unique=True, nullable=False)
@@ -41,8 +54,8 @@ with app.app_context():
     
     if not User.query.first():
         master_user = [
-            User(username = 'admin', email_address = 'admin@gmail.com', password_hash = generate_password_hash('Master_User1_Password'), is_verified=True),
-            User(username = 'inovaix', email_address = 'inovaix@gmail.com', password_hash = generate_password_hash('Master_User2_Password'), is_verified=True)
+            User(username = 'admin', email_address = 'admin@gmail.com', password_hash = generate_password_hash(os.getenv('Master_User1_Password')), is_verified=True),
+            User(username = 'inovaix', email_address = 'inovaix@gmail.com', password_hash = generate_password_hash(os.getenv('Master_User2_Password')), is_verified=True)
         ]
         db.session.bulk_save_objects(master_user)
         db.session.commit()
