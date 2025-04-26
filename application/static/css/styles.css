@@ -187,5 +187,5 @@ footer {
 }
 
 .carousel-item {
-    transition: transform 2s ease-in-out; /* 1 second transition */
+    transition: transform 1s ease-in-out; /* 1 second transition */
   }
