@@ -25,6 +25,7 @@ mongodb = client["mavdatabase"]
 members_collection = mongodb["members"]
 projects_collection = mongodb["projects"]
 latest_news_collection = mongodb["latest_news"]
+users_collection = mongodb["users"]
 def init_db():
     # Check if the collections are empty and insert data if they are
     if members_collection.count_documents({}) == 0:
@@ -45,6 +46,11 @@ def init_db():
             {"headline": "Maintenance Scheduled", "content": "Scheduled maintenance on 2023-10-05.", "date": "2023-10-03"}
         ])
 
+    if users_collection.count_documents({}) == 0:
+        users_collection.insert_many([
+            {"username": "admin", "email": "admin@example.com", "role": "Administrator", "password": "admin123"},
+            {"username": "guest", "email": "guest@example.com", "role": "Guest", "password": "guest123"}
+        ])
 # Call the init_db function to initialize the database if empty
 init_db()
 # # Close the connection (optional, as the client will handle it automatically)

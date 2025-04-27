@@ -6,24 +6,119 @@ coordintors = [
 ]
 
 members = [
-    {'name': 'Teja Reddy', 'designation': 'Student Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2022-2026','branch':'GCT'},
+    {'name': 'Teja Reddy', 'designation': 'Student Coordinator', 'img_url': 'team-img/KOYEE TEJA REDDY.jpg', 'batch': '2022-2026','branch':'GCT'},
     {'name': 'Ankita Singh', 'designation': 'Co-Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Devansh', 'designation': 'Event Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2022-2026','branch':'GCT'},
+    {'name': 'Devansh', 'designation': 'Event Coordinator', 'img_url': 'team-img/DEVANSH.jpg', 'batch': '2022-2026','branch':'GCT'},
     {'name': 'Ankit Kumar', 'designation': 'Projects Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
     {'name': 'Prashant Mishra', 'designation': 'Technical Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Sandarbh Kumar', 'designation': 'Resource Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Akanksha Armo', 'designation': 'Jr.Student Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Aadarsh Nath', 'designation': 'Documentation', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Piyush Gupta', 'designation': 'Fund Manager', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Sandarbh Kumar', 'designation': 'Resource Head', 'img_url': 'team-img/SANDARBH KUMAR.jpg', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Akanksha Armo', 'designation': 'Jr.Student Coordinator', 'img_url': 'team-img/AKANKSHA ARMO.jpg', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Aadarsh Nath', 'designation': 'Documentation', 'img_url': 'team-img/Aadarsh Nath.jpg', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Piyush Gupta', 'designation': 'Fund Manager', 'img_url': 'team-img/PIYUSH GUPTA.jpg', 'batch': '2023-2027','branch':'GCT'},
     {'name': 'Kumar Sparsh', 'designation': 'Social Media', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Abhishek Yadav', 'designation': 'Website Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCS'},
-    {'name': 'Dhairya Baranwal', 'designation': 'Public Relations', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Vishal Kumar', 'designation': 'Assets', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Rashim Malhotra', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Anisha Kumari', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Abhishek Yadav', 'designation': 'Website Head', 'img_url': 'team-img/ABHISHEK YADAV.jpg', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Dhairya Baranwal', 'designation': 'Public Relations', 'img_url': 'team-img/DHAIRYA BARANWAL.jpg', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Vishal Kumar', 'designation': 'Assets', 'img_url': 'team-img/VISHAL.jpg', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Rashim Malhotra', 'designation': 'Executives', 'img_url': 'team-img/RASHIM MALHOTRA.png', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Anisha Kumari', 'designation': 'Executives', 'img_url': 'team-img/ANISHA KUMARI.jpg', 'batch': '2023-2027','branch':'GCT'},
     {'name': 'Priyanshu Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
     {'name': 'Ankit Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch':'2023-2027','branch':'GCT'}
 ]
+
+
+members_old = [
+    {'name': 'Kaushik Suman', 'img_url': 'team-img/profile.png', 'batch': '2015-2018 (LEET)', 'branch': ''},
+    {'name': 'Akshat Garg', 'img_url': 'team-img/profile.png', 'batch': 'Pass out', 'branch': 'GCS'},
+    {'name': 'Ajay Kumar', 'img_url': 'team-img/profile.png', 'batch': 'Pass out', 'branch': 'GEC'},
+    {'name': 'Dhanesh Kumar', 'img_url': 'team-img/profile.png', 'batch': 'Pass out', 'branch': 'GEC'},
+    {'name': 'Dhruv Patel', 'img_url': 'team-img/profile.png', 'batch': 'Pass out', 'branch': 'GEE'},
+    {'name': 'Muskan Methi', 'img_url': 'team-img/profile.png', 'batch': 'Pass out', 'branch': 'GEE'},
+    {'name': 'Kshitiz', 'img_url': 'team-img/profile.png', 'batch': 'Pass out', 'branch': 'GEE'},
+    {'name': 'Ram Kumar', 'img_url': 'team-img/profile.png', 'batch': 'Pass out', 'branch': 'GME'},
+    {'name': 'Apoorv Bansal', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'Aman', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'Saurabh Kumar', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'Manish Kumar', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'Dheeraj Kumar', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'Amisha nath', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GCS'},
+    {'name': 'Ankit Sharma', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GCS'},
+    {'name': 'Vikas Chaurasia', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GCS'},
+    {'name': 'Shreya sinha', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GEC'},
+    {'name': 'Sushant Shankar', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GEC'},
+    {'name': 'PRIYANSHU KUMAR JHA', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GEE'},
+    {'name': 'Aman Kumar', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GEE'},
+    {'name': 'Amisha', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GEE'},
+    {'name': 'Srinjoy Chakraborty', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GEE'},
+    {'name': 'Pratham Himanshu', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GIN'},
+    {'name': 'Manish Kumar', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'Shushil kumar yadav', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'Adarsh Kumar Roy', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'},
+    {'name': 'ARBIND KUMAR', 'img_url': 'team-img/profile.png', 'batch': '4th year UG', 'branch': 'GME'}
+]
+
+
+
+diploma_members = [
+    {
+      "name": "Sanit Arya",
+      "status": "3rd year Diploma",
+      "branch": "CAC - Mechanical",
+      "ProfessionalPhotoURL": "https://drive.google.com/open?id=1JWBa7jkdnpqztv799buoVzw10YLbNxLs",
+      "RegistrationNumber": "2216138",
+    },
+    {
+      "name": "Mehak Negi",
+      "status": "3rd year Diploma",
+      "branch": "Computer Science",
+      "ProfessionalPhotoURL": "https://drive.google.com/open?id=1L0HRRck1HU_-evSFUYMwYoWYEltTXMPJ",
+      "RegistrationNumber": "2211021",
+      "LinkedInURL": "https://www.linkedin.com/in/mehak-negi-935985261"
+    },
+    {
+      "name": "Rishav Raj",
+      "status": "3rd year Diploma",
+      "branch": "Electronics",
+      "ProfessionalPhotoURL": "https://drive.google.com/open?id=1Evr4FZDO64jYZYI8RSkqhBO6vLuw-BfE",
+      "RegistrationNumber": "2213103",
+      "LinkedInURL": "https://www.linkedin.com/in/-mr-rishav"
+    },
+    {
+        "name": "Anisha Kumari",
+        "status": "2nd year Diploma",
+        "branch": "GCS",
+        "ProfessionalPhotoURL": "https://drive.google.com/open?id=1KvF0onolxaAU2skbCKPXIakGhj4plBCX",
+        "RegistrationNumber": "2110204",
+    },
+    {
+        "name": "Roshni Kumari",
+        "status": "3st year Diploma",
+        "branch": "CSME",
+        "ProfessionalPhotoURL": "Roshni.png",
+        "RegistrationNumber": "2213120",
+    },
+    {
+        "name": "Siddhi Suman",
+        "status": "2nd year Diploma",
+        "branch": "CDE",
+        "ProfessionalPhotoURL": "IMAGE.PNG",
+        "RegistrationNumber": "2311051",
+    },
+    {
+        "name": "Neha Kumari",
+        "status": "2nd year Diploma",
+        "Branch": "CSMM",
+        "ProfessionalPhotoURL": "IMAGE.PNG",
+        "RegistrationNumber": "2314208",
+    },
+    {
+        "name": "Isha Kumari",
+        "status": "2nd year Diploma",
+        "Branch": "CSMM",
+        "ProfessionalPhotoURL": "IMAGE.PNG",
+        "RegistrationNumber": "2314220",
+    }
+]
+
 iot_projects = [
     {
         "name": "Line Following Robot (LFR)",

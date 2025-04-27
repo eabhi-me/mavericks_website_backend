@@ -28,6 +28,54 @@
         </div>
         {% endfor %}
         </div>
+
+        <h3 class="gradient-text">EARLIER</h3>
+        <div class="row">
+          {% for member in members_old %}
+          <div class="col-md-2 mb-4">
+            <div class="card h-100">
+              <img src="{{ url_for('static', filename=member.img_url) }}" class="card-img-top" alt="{{ member.title }}">
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
+                <p class="card-text">{{member.designation }}</p>
+                <p class="card-text">{{member.batch }}</p>
+                <div class="mt-auto">
+              <div class="social-links">
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          </div>
+
+          <h3 class="gradient-text">Diploma</h3>
+          <div class="row">
+            {% for member in diploma_members %}
+            <div class="col-md-2 mb-4">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename=member.img_url) }}" class="card-img-top" alt="{{ member.title }}">
+                <div class="card-body text-center d-flex flex-column">
+                  <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
+                  <p class="card-text">{{member.status }}</p>
+                  <p class="card-text">{{member.batch }}</p>
+                  <div class="mt-auto">
+                <div class="social-links">
+                  <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            </div>
     </div>        
  
 {% endblock %}
