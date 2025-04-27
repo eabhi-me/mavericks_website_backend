@@ -7,22 +7,22 @@ coordintors = [
 
 members = [
     {'name': 'Teja Reddy', 'designation': 'Student Coordinator', 'img_url': 'team-img/KOYEE TEJA REDDY.jpg', 'batch': '2022-2026','branch':'GCT'},
-    {'name': 'Ankita Singh', 'designation': 'Co-Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Devansh', 'designation': 'Event Coordinator', 'img_url': 'team-img/DEVANSH.jpg', 'batch': '2022-2026','branch':'GCT'},
-    {'name': 'Ankit Kumar', 'designation': 'Projects Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Prashant Mishra', 'designation': 'Technical Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Sandarbh Kumar', 'designation': 'Resource Head', 'img_url': 'team-img/SANDARBH KUMAR.jpg', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Akanksha Armo', 'designation': 'Jr.Student Coordinator', 'img_url': 'team-img/AKANKSHA ARMO.jpg', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Aadarsh Nath', 'designation': 'Documentation', 'img_url': 'team-img/Aadarsh Nath.jpg', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Piyush Gupta', 'designation': 'Fund Manager', 'img_url': 'team-img/PIYUSH GUPTA.jpg', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Kumar Sparsh', 'designation': 'Social Media', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
+    {'name': 'Ankita Singh', 'designation': 'Co-Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
+    {'name': 'Devansh', 'designation': 'Event Coordinator', 'img_url': 'team-img/DEVANSH.jpg', 'batch': '2022-2026','branch':'GME'},
+    {'name': 'Ankit Kumar', 'designation': 'Projects Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
+    {'name': 'Prashant Mishra', 'designation': 'Technical Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
+    {'name': 'Sandarbh Kumar', 'designation': 'Resource Head', 'img_url': 'team-img/SANDARBH KUMAR.jpg', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Akanksha Armo', 'designation': 'Jr.Student Coordinator', 'img_url': 'team-img/AKANKSHA ARMO.jpg', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Aadarsh Nath', 'designation': 'Documentation', 'img_url': 'team-img/Aadarsh Nath.jpg', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Piyush Gupta', 'designation': 'Fund Manager', 'img_url': 'team-img/PIYUSH GUPTA.jpg', 'batch': '2023-2027','branch':'GEC'},
+    {'name': 'Kumar Sparsh', 'designation': 'Social Media', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Abhishek Yadav', 'designation': 'Website Head', 'img_url': 'team-img/ABHISHEK YADAV.jpg', 'batch': '2023-2027','branch':'GCS'},
-    {'name': 'Dhairya Baranwal', 'designation': 'Public Relations', 'img_url': 'team-img/DHAIRYA BARANWAL.jpg', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Vishal Kumar', 'designation': 'Assets', 'img_url': 'team-img/VISHAL.jpg', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Rashim Malhotra', 'designation': 'Executives', 'img_url': 'team-img/RASHIM MALHOTRA.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Anisha Kumari', 'designation': 'Executives', 'img_url': 'team-img/ANISHA KUMARI.jpg', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Priyanshu Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCT'},
-    {'name': 'Ankit Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch':'2023-2027','branch':'GCT'}
+    {'name': 'Dhairya Baranwal', 'designation': 'Public Relations', 'img_url': 'team-img/DHAIRYA BARANWAL.jpg', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Vishal Kumar', 'designation': 'Assets', 'img_url': 'team-img/VISHAL.jpg', 'batch': '2023-2027','branch':'GME'},
+    {'name': 'Rashim Malhotra', 'designation': 'Executives', 'img_url': 'team-img/RASHIM MALHOTRA.png', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Anisha Kumari', 'designation': 'Executives', 'img_url': 'team-img/ANISHA KUMARI.jpg', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Priyanshu Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Ankit Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch':'2023-2027','branch':'GEC'}
 ]
 
 
