@@ -10,7 +10,7 @@
         {% for member in members %}
         <div class="col-md-2 mb-4">
           <div class="card h-100">
-            <img src="{{ url_for('static', filename=member.img_url) }}" class="card-img-top" alt="{{ member.title }}">
+            <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
             <div class="card-body text-center d-flex flex-column">
               <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
               <p class="card-text">{{member.designation }}</p>
@@ -34,7 +34,7 @@
           {% for member in members_old %}
           <div class="col-md-2 mb-4">
             <div class="card h-100">
-              <img src="{{ url_for('static', filename=member.img_url) }}" class="card-img-top" alt="{{ member.title }}">
+              <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
               <div class="card-body text-center d-flex flex-column">
                 <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
                 <p class="card-text">{{member.designation }}</p>
@@ -58,7 +58,7 @@
             {% for member in diploma_members %}
             <div class="col-md-2 mb-4">
               <div class="card h-100">
-                <img src="{{ url_for('static', filename=member.img_url) }}" class="card-img-top" alt="{{ member.title }}">
+                <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
                 <div class="card-body text-center d-flex flex-column">
                   <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
                   <p class="card-text">{{member.status }}</p>
