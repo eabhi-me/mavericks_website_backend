@@ -9,11 +9,22 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
 app = Flask(__name__)
 CORS(app) 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mystore.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+
+cloudinary.config( 
+    cloud_name=os.getenv('CLOUDINARY_CLOUD_NAME'), 
+    api_key=os.getenv('CLOUDINARY_API_KEY'), 
+    api_secret=os.getenv('CLOUDINARY_API_SECRET'), 
+    secure=True 
+)
 
 app.config.update(
     MAIL_SERVER="smtp.gmail.com",
