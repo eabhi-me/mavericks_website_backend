@@ -681,7 +681,7 @@ footer::before {
 }
 
 .main-carousel .carousel-item {
-    height: 400px;
+    height: 500px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -799,10 +799,12 @@ footer::before {
 .team-carousel {
     margin: 2rem 0;
     padding: 1rem;
+    overflow-y: visible;
 }
 
 .team-carousel .carousel-item {
     padding: 1rem;
+    overflow-y: visible;
 }
 
 .team-carousel .card {
@@ -1108,4 +1110,10 @@ footer::before {
 
 .news-list::-webkit-scrollbar-thumb:hover {
     background: var(--tech-secondary);
+}
+
+#sliet-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
