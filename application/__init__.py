@@ -1,9 +1,9 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_bcrypt import Bcrypt
 from flask_cors import CORS
-from flask_login import LoginManager
+from flask_login import LoginManager, UserMixin
 from flask_mail import Mail
+from .extensions import bcrypt, init_app
+from bson import ObjectId
 # seting the environment
 from dotenv import load_dotenv
 import os
@@ -15,9 +15,10 @@ import cloudinary.api
 
 app = Flask(__name__)
 CORS(app) 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mystore.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+# Session configuration
+app.config['SESSION_TYPE'] = 'filesystem'
+app.config['PERMANENT_SESSION_LIFETIME'] = 1800  # 30 minutes
 
 cloudinary.config( 
     cloud_name=os.getenv('CLOUDINARY_CLOUD_NAME'), 
@@ -36,14 +37,36 @@ app.config.update(
 )
 mail = Mail(app)
 
+# Initialize extensions
+init_app(app)
 
-db = SQLAlchemy(app)
-bcrypt = Bcrypt(app)
+# User class
+class User(UserMixin):
+    def __init__(self, user_dict):
+        self.id = str(user_dict['_id'])  # Convert ObjectId to string
+        self.username = user_dict['username']
+        self.email_address = user_dict['email_address']
+        self.role = user_dict['role']
+        self.password = user_dict['password']
+
+    def get_id(self):
+        return str(self.id)  # Ensure we return string ID
 
 # intatiate an login manager
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 login_manager.login_message_category = 'info'
 
-from application.models import *
+# User loader for Flask-Login
+@login_manager.user_loader
+def load_user(user_id):
+    from config.mdatabase import users_collection
+    try:
+        user = users_collection.find_one({'_id': ObjectId(user_id)})
+        return User(user) if user else None
+    except Exception as e:
+        print("Error loading user:", str(e))
+        return None
+
 from application.apis import *
+from application.admin_api import *

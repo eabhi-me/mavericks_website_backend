@@ -6,27 +6,39 @@
 
 {% block content %}
 
-    <div class="container mt-5" style="padding-top: 60px; width:80%">
-        <form method="post" class="form-register">
-            {{ form.hidden_tag() }}
-            <h3>Login</h3>
-            <br>
-    
-            {{ form.email_address.label() }}
-            {{ form.email_address(class="form-control", placeholder="Email Address ") }}
-    
-            {{ form.password.label() }}
-            {{ form.password(class="form-control", placeholder="Password") }}
-    
-    
-            <br>
-            {{ form.submit(class="btn btn-primary")}}
-            
-                    </form>
-        <br/>
-        
-    </div>
+<div class="container-fluid me-2 mt-3 pt-5" style="margin-top: 80px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
 </div>
+
+<div class="container mt-5 mb-5" style="padding-top: 60px; width:80%">
+    <form method="post" class="form-register">
+        {{ form.hidden_tag() }}
+        <h3>Login</h3>
+        <br>
+
+        {{ form.email_address.label() }}
+        {{ form.email_address(class="form-control", placeholder="Email Address ") }}
+
+        {{ form.password.label() }}
+        {{ form.password(class="form-control", placeholder="Password") }}
+
+
+        <br>
+        {{ form.submit(class="btn btn-primary")}}
+        
+    </form>
+    
+</div>
+
 
 
 

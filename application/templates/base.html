@@ -50,6 +50,15 @@
                 <li class="nav-item">
                   <a class="nav-link animate-slide-in" href="{{ url_for('gallery') }}">Gallery</a>
                 </li>
+                {% if current_user.is_authenticated %}
+                  <li class="nav-item">
+                    <a class="nav-link animate-slide-in" href="{{ url_for('dashboard') }}">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link animate-slide-in" href="{{ url_for('logout') }}">Logout</a>
+                  </li>
+                {% endif %}
+
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle animate-slide-in" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     More
@@ -58,18 +67,15 @@
                     <li><a class="dropdown-item" href="#">Events</a></li>
                     <li><a class="dropdown-item" href="#">Workshops</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Join Us</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('login') }}">Login</a></li>
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" id="frm-search" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-              </form>
             </div>
           </div>
       </nav>
     </div>
+
 
     {% block content %}
     {% endblock %}
