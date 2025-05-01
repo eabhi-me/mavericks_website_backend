@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="static/images\favicon.ico" type="image/x-icon" />
-    <title>Mavericks - Technical Club</title>
+    <title>Mavericks - Robotics Club</title>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
@@ -52,6 +52,7 @@
       href="{{ url_for('static', filename='images/favicon.png') }}"
       type="image/x-icon"
     />
+    
 
     {% block link %} {% endblock %}
   </head>
@@ -61,8 +62,9 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top myNavClass animate-fade-in">
           <div class="container-fluid align-items-center">
             <a class="navbar-brand logo-txt fw-bold fs-3" href="{{ url_for('home') }}">
-              <i class="fas fa-microchip me-2"></i>
-              <img src="{{ url_for('static', filename='images/mav-banner.png') }}" alt="Mavericks Logo" class="footer-logo">
+              <i class="fas fa-microchip me-2 ms-2 mav-color"></i>
+              <!-- <img src="{{ url_for('static', filename='images/mav-banner.png') }}" alt="Mavericks Logo" class="footer-logo"> -->
+              <span class="mav-color">Mavericks</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -107,7 +109,6 @@
               </ul>
             </div>
           </div>
-        </div>
       </nav>
     </div>
 
@@ -166,6 +167,13 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-light py-2 mt-4" style="border-top: 1px solid #dee2e6;">
+        <div class="container">
+          <p class="text-center text-muted small mb-0">
+            Designed with <i class="fas fa-heart text-danger"></i> by Mavericks Development Team
+          </p>
         </div>
       </div>
     </footer>
