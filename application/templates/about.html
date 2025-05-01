@@ -1,51 +1,248 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
 
-{% block content %}
-    <div class="container mt-5 pt-5 my-5" style="max-width: 80%;">
-        <section id="about" class="mb-5">
-            <h2 class="text-center mb-4">Who We Are</h2>
-            <p class="text-justify">
-                Welcome to Mavericks, the official robotics club of Sant Longowal Institute of Engineering and 
-                Technology (SLIET). We are a community of passionate innovators, engineers, and problem-solvers who 
-                strive to push the boundaries of robotics, automation, and AI.
-                <br><br>
-                At Mavericks, we believe in learning by doing. Our team consists of students from Mechanical, 
-                Mechatronics, Electronics, Computer Science, and Electrical Engineering backgrounds, collaborating 
-                on cutting-edge projects, competitions, and industrial problem-solving. 
-            </p>
-        </section>
-
-        <section id="objectives" class="hidden mb-5">
-            <h2 class="text-center mb-4">Our Objectives</h2>
-            <ul class="list-unstyled">
-                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> To promote creativity and increase the technical know-how and productivity of all students at the Institute.</li>
-                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> To promote hands-on and co-operative learning, engage students in problem-solving, and work on Industrial Oriented Projects.</li>
-                <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> We inspire students to transform ideas into startups and research projects by providing mentorship, networking, and industry exposure.</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> Mavericks is a hub where students from different engineering disciplines collaborate, experiment, and grow together in a fun and innovative environment.</li>
-            </ul>
-        </section>
-
-        <section id="achievements" class="hidden mb-5">
-            <h2 class="text-center mb-4">Our Achievements</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Won in Smart India Hackathon (SIH) in 2019, 2020.</li>
-                <li class="list-group-item">Two teams qualified for the zonal rounds of DRDO's Unmanned Vehicle Challenge.</li>
-                <li class="list-group-item">Top teams in the E-YANTRA 2017, 2018, 2019 competition by Ministry of Education and IIT Bombay.</li>
-                <li class="list-group-item">Glorious participation at technical fests at IIT Bombay, IIT Kanpur, IIT Delhi, IIT BHU, PEC, Thapar University, and GNDU Amritsar.</li>
-            </ul>
-        </section>
-
-        <section id="what-we-do" class="hidden mb-5">
-            <h2 class="text-center mb-4">What We Do</h2>
-            <ul class="list-unstyled">
-                <li class="mb-2"><i class="bi bi-rocket-fill text-primary"></i> <strong>Build & Innovate</strong> - We design, prototype, and develop autonomous robots, AI-driven systems, and IoT-based solutions.</li>
-                <li class="mb-2"><i class="bi bi-trophy-fill text-warning"></i> <strong>Compete & Win</strong> - Our team actively participates in national and international robotics and coding competitions like Smart India Hackathon (SIH), DRDO's Unmanned Vehicle Challenge, and e-Yantra.</li>
-                <li><i class="bi bi-lightbulb-fill text-info"></i> <strong>Learn & Share</strong> - We conduct workshops, seminars, and hands-on training on robotics, embedded systems, AI, and coding to inspire the next generation of engineers.</li>
-            </ul>
-        </section>
-
-        <section id="catchy-line" class="text-center">
-            <h3 class="fw-bold">At Mavericks, we don’t just build robots—we build future engineers and leaders! 🚀🤖</h3>
-        </section>
+<div class="container mt-5 pt-5 my-5" style="max-width: 80%">
+  <!-- Hero Section -->
+  <section class="py-4">
+    <div class="container about-card">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold" style="color: #0097e6">
+            Welcome to Team Mavericks
+          </h1>
+          <p class="lead">
+            We are the official robotics club of SLIET, uniting passionate
+            students from diverse engineering backgrounds to push the boundaries
+            of robotics, AI, and automation.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img
+            src="https://images.unsplash.com/photo-1558137623-ce933996c730?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJvYm90aWNzfGVufDB8fDB8fHwy"
+            alt="Robotics"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+      </div>
     </div>
- {% endblock %}
+  </section>
+  <!-- objectives 2 -->
+  <div class="container my-5">
+    <h4 class="text-center text-primary mb-4 display-6">Our Objectives</h4>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div
+          class="card h-100 shadow-sm border-0 objective-card text-center p-3"
+        >
+          <div class="mb-3">
+            <i class="fas fa-lightbulb fa-2x text-primary"></i>
+          </div>
+          <h5 class="card-title">Foster Innovation</h5>
+          <p class="card-text">
+            Promote creativity and hands-on technical learning.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="card h-100 shadow-sm border-0 objective-card text-center p-3"
+        >
+          <div class="mb-3">
+            <i class="fas fa-handshake fa-2x text-primary"></i>
+          </div>
+          <h5 class="card-title">Encourage Collaboration</h5>
+          <p class="card-text">
+            Interdisciplinary teamwork across departments and domains.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="card h-100 shadow-sm border-0 objective-card text-center p-3"
+        >
+          <div class="mb-3">
+            <i class="fas fa-chalkboard-teacher fa-2x text-primary"></i>
+          </div>
+          <h5 class="card-title">Mentorship Culture</h5>
+          <p class="card-text">
+            Guide members through technical and career growth.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="card h-100 shadow-sm border-0 objective-card text-center p-3"
+        >
+          <div class="mb-3">
+            <i class="fas fa-rocket fa-2x text-primary"></i>
+          </div>
+          <h5 class="card-title">Startup Mindset</h5>
+          <p class="card-text">
+            Transform ideas into real-world projects and scalable solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section: Our Mission -->
+  <section class="py-4">
+    <div class="container about-card">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img
+            src="https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHJvYm90fGVufDB8fDB8fHwy"
+            class="img-fluid rounded shadow"
+            alt="Team Mavericks"
+          />
+        </div>
+        <div class="col-md-6 text-center">
+          <h2 class="section-title" style="color: #0097e6">Our Mission</h2>
+          <p>
+            We promote a culture of hands-on learning, research-driven
+            innovation, and collaborative problem-solving. With members from
+            Mechanical, Mechatronics, ECE, EE, and CSE, we bridge disciplines to
+            create meaningful technology.
+          </p>
+          <p>
+            Our club mentors students, prepares them for competitions, and turns
+            ideas into real-world prototypes and startups.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectives Section -->
+  <section class="py-4">
+    <div class="container about-card">
+      <h2 class="section-title text-center">Our Objectives</h2>
+      <ul class="list-group list-group-flush mx-auto" style="max-width: 720px">
+        <li class="list-group-item">
+          Promote creativity and hands-on technical learning.
+        </li>
+        <li class="list-group-item">
+          Encourage interdisciplinary collaboration on projects.
+        </li>
+        <li class="list-group-item">
+          Provide mentorship and industrial exposure to members.
+        </li>
+        <li class="list-group-item">
+          Turn innovative ideas into viable startups and solutions.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="py-4">
+    <div class="container about-card">
+      <h2 class="section-title text-center">Our Achievements</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm about-card">
+            <div class="card-body">
+              <div class="card-icon mb-2">🏆</div>
+              <h5 class="card-title">Smart India Hackathon</h5>
+              <p class="card-text">
+                Winners in 2019 and 2020 with problem-solving automation
+                projects.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm about-card">
+            <div class="card-body">
+              <div class="card-icon mb-2">🚀</div>
+              <h5 class="card-title">DRDO UV Challenge</h5>
+              <p class="card-text">
+                Zonal qualifiers with an unmanned ground vehicle prototype.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm about-card">
+            <div class="card-body">
+              <div class="card-icon mb-2">🤖</div>
+              <h5 class="card-title">Tech Fest Demos</h5>
+              <p class="card-text">
+                Demonstrated automation and AI models in national-level events.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm about-card">
+            <div class="card-body">
+              <div class="card-icon mb-2">🔗</div>
+              <h5 class="card-title">Industry Collaborations</h5>
+              <p class="card-text">
+                Worked on real-world automation projects with local companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="what-we-do" class="py-4 hidden mb-5">
+    <div class="container about-card">
+      <h2 class="text-center mb-4">What We Do</h2>
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <i class="bi bi-rocket-fill text-primary"></i>
+          <strong>Build & Innovate</strong> - We design, prototype, and develop
+          autonomous robots, AI-driven systems, and IoT-based solutions.
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-trophy-fill text-warning"></i>
+          <strong>Compete & Win</strong> - Our team actively participates in
+          national and international robotics and coding competitions like Smart
+          India Hackathon (SIH), DRDO's Unmanned Vehicle Challenge, and
+          e-Yantra.
+        </li>
+        <li>
+          <i class="bi bi-lightbulb-fill text-info"></i>
+          <strong>Learn & Share</strong> - We conduct workshops, seminars, and
+          hands-on training on robotics, embedded systems, AI, and coding to
+          inspire the next generation of engineers.
+        </li>
+      </ul>
+    </div>
+  </section> -->
+  <!-- Why join us section -->
+  <div class="container my-5">
+    <h4 class="text-center text-primary mb-4">Why Join Mavericks?</h4>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <i class="fas fa-robot fa-2x mb-2 text-primary"></i>
+        <p>Work on cutting-edge robotics and AI projects.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-users fa-2x mb-2 text-primary"></i>
+        <p>Collaborate with peers from multiple departments.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-award fa-2x mb-2 text-primary"></i>
+        <p>Participate and win national-level competitions.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-network-wired fa-2x mb-2 text-primary"></i>
+        <p>Build a network of mentors, alumni, and industry experts.</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="catchy-line" class="text-center py-4">
+    <h3 class="fw-bold" style="color: #063751">
+      At Mavericks, we don’t just build robots—we build future engineers and
+      leaders! 🚀🤖
+    </h3>
+  </section>
+</div>
+{% endblock %}
