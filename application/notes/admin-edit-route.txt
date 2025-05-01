@@ -1,0 +1,102 @@
+# # Project Management Routes
+# @app.route('/api/projects', methods=['POST'])
+# @login_required
+# def add_project():
+#     if request.method == 'POST':
+#         data = request.json
+#         project = {
+#             'name': data['name'],
+#             'description': data['description']
+#         }
+#         projects_collection.insert_one(project)
+#         return jsonify({'message': 'Project added successfully'}), 201
+
+# @app.route('/api/projects/<project_id>', methods=['PUT', 'DELETE'])
+# @login_required
+# def manage_project(project_id):
+#     if request.method == 'PUT':
+#         data = request.json
+#         projects_collection.update_one(
+#             {'_id': ObjectId(project_id)},
+#             {'$set': {
+#                 'name': data['name'],
+#                 'description': data['description']
+#             }}
+#         )
+#         return jsonify({'message': 'Project updated successfully'})
+    
+#     elif request.method == 'DELETE':
+#         projects_collection.delete_one({'_id': ObjectId(project_id)})
+#         return jsonify({'message': 'Project deleted successfully'})
+
+# # News Management Routes
+# @app.route('/api/news', methods=['POST'])
+# @login_required
+# def add_news():
+#     if request.method == 'POST':
+#         data = request.json
+#         news = {
+#             'title': data['title'],
+#             'description': data['description'],
+#             'date': data['date']
+#         }
+#         latest_news_collection.insert_one(news)
+#         return jsonify({'message': 'News added successfully'}), 201
+
+# @app.route('/api/news/<news_id>', methods=['PUT', 'DELETE'])
+# @login_required
+# def manage_news(news_id):
+#     if request.method == 'PUT':
+#         data = request.json
+#         latest_news_collection.update_one(
+#             {'_id': ObjectId(news_id)},
+#             {'$set': {
+#                 'title': data['title'],
+#                 'description': data['description'],
+#                 'date': data['date']
+#             }}
+#         )
+#         return jsonify({'message': 'News updated successfully'})
+    
+#     elif request.method == 'DELETE':
+#         latest_news_collection.delete_one({'_id': ObjectId(news_id)})
+#         return jsonify({'message': 'News deleted successfully'})
+
+# # User Management Routes
+# @app.route('/api/users', methods=['POST'])
+# @login_required
+# def add_user():
+#     if request.method == 'POST':
+#         data = request.json
+#         hashed_password = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+#         user = {
+#             'username': data['username'],
+#             'email_address': data['email'],
+#             'password': hashed_password,
+#             'role': data['role']
+#         }
+#         users_collection.insert_one(user)
+#         return jsonify({'message': 'User added successfully'}), 201
+
+# @app.route('/api/users/<user_id>', methods=['PUT', 'DELETE'])
+# @login_required
+# def manage_user(user_id):
+#     if request.method == 'PUT':
+#         data = request.json
+#         update_data = {
+#             'username': data['username'],
+#             'email_address': data['email'],
+#             'role': data['role']
+#         }
+#         if 'password' in data:
+#             update_data['password'] = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+        
+#         users_collection.update_one(
+#             {'_id': ObjectId(user_id)},
+#             {'$set': update_data}
+#         )
+#         return jsonify({'message': 'User updated successfully'})
+    
+#     elif request.method == 'DELETE':
+#         users_collection.delete_one({'_id': ObjectId(user_id)})
+#         return jsonify({'message': 'User deleted successfully'})

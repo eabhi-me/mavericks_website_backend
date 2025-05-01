@@ -9,7 +9,7 @@ members = [
     {'name': 'Teja Reddy', 'designation': 'Student Coordinator', 'img_url': 'team-img/KOYEE TEJA REDDY.jpg', 'batch': '2022-2026','branch':'GCT'},
     {'name': 'Ankita Singh', 'designation': 'Co-Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
     {'name': 'Devansh', 'designation': 'Event Coordinator', 'img_url': 'team-img/DEVANSH.jpg', 'batch': '2022-2026','branch':'GME'},
-    {'name': 'Ankit Kumar', 'designation': 'Projects Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
+    {'name': 'Ankit Kumar', 'designation': 'Projects Head', 'img_url': 'team-img/2010417 - Ankit Kumar Sha.jpg', 'batch': '2023-2027','branch':'GEE'},
     {'name': 'Prashant Mishra', 'designation': 'Technical Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
     {'name': 'Sandarbh Kumar', 'designation': 'Resource Head', 'img_url': 'team-img/SANDARBH KUMAR.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Akanksha Armo', 'designation': 'Jr.Student Coordinator', 'img_url': 'team-img/AKANKSHA ARMO.jpg', 'batch': '2023-2027','branch':'GCS'},

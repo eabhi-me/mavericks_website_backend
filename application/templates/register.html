@@ -1,11 +1,6 @@
-{% extends 'base.html' %}
-
-{% block title %}
-    Login
-{% endblock %}
+{% extends "base.html" %}
 
 {% block content %}
-
 <div class="container-fluid me-2 mt-3 pt-5" style="margin-top: 80px;">
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
@@ -18,34 +13,28 @@
         {% endif %}
     {% endwith %}
 </div>
-
 <div class="container mt-5 mb-5" style="padding-top: 60px; width:80%">
-    <form method="post" class="form-register">
+    <form method="POST" class="form-register">
         {{ form.hidden_tag() }}
-        <h3>Login</h3>
+        <h3>Register</h3>
         <br>
-
+        
+        {{ form.username.label() }}
+        {{ form.username(class="form-control", placeholder="Username ") }}
+        
         {{ form.email_address.label() }}
         {{ form.email_address(class="form-control", placeholder="Email Address ") }}
 
         {{ form.password.label() }}
         {{ form.password(class="form-control", placeholder="Password") }}
 
+        {{ form.confirm_password.label() }}
+        {{ form.confirm_password(class="form-control", placeholder="Confirm Password") }}
 
         <br>
         {{ form.submit(class="btn btn-primary")}}
-        
+
     </form>
-    
 </div>
 
-
-
-
-
-{% endblock%}
-
-
-{% block footer %}
-    
 {% endblock %} 

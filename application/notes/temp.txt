@@ -1,0 +1,45 @@
+# @app.route('/project')
+# def project():
+#     if request.method == 'GET':
+#         results = projects_collection.find({})
+#         projects = [serialize_doc(project) for project in results]
+#     return render_template('projects.html', projects=projects)
+
+# @app.route('/team')
+# def team():
+#     if request.method == 'GET':
+#         results = members_collection.find({})
+#         members = [serialize_doc(member) for member in results]
+#         for member in members:
+#             if "image_url" in member:
+#                 try:
+#                     file_id = member["image_url"].split("/d/")[1].split("/")[0]
+#                     member["image_direct"] = f"https://drive.google.com/uc?export=view&id={file_id}"
+#                     print(member["image_direct"])
+#                     print(file_id)
+#                 except:
+#                     member["image_direct"] = ""
+#     return render_template('team.html', members=members)
+
+
+# @app.route('/members', methods=['GET', 'POST'])
+# def membersDetails():
+#     if request.method == 'GET':
+#         results = members_collection.find({})
+#         members = [serialize_doc(member) for member in results]
+#         return jsonify(members)
+#     elif request.method == 'POST':
+#         new_member = request.json
+#         projects_collection.insert_one(new_member)
+#         return jsonify({"message": "Member added successfully"}), 201
+
+# @app.route('/projects', methods=['GET', 'POST'])
+# def projectsDetails():
+#     if request.method == 'GET':
+#         results = projects_collection.find({})
+#         projects = [serialize_doc(project) for project in results]
+#         return jsonify(projects)
+#     elif request.method == 'POST':
+#         new_project = request.json
+#         projects_collection.insert_one(new_project)
+#         return jsonify({"message": "Project added successfully"}), 201
