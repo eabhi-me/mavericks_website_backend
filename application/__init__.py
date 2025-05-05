@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_cors import CORS
 from flask_login import LoginManager, UserMixin
-from flask_mail import Mail
+from flask_mail import Mail, Message
 from .extensions import bcrypt, init_app
 from bson import ObjectId
 # seting the environment
@@ -34,6 +34,7 @@ app.config.update(
     MAIL_USE_SSL=False,
     MAIL_USERNAME=os.getenv('MAIL_USERNAME'),
     MAIL_PASSWORD=os.getenv('MAIL_PASSWORD'),
+    MAIL_DEFAULT_SENDER=os.getenv('MAIL_USERNAME')
 )
 mail = Mail(app)
 

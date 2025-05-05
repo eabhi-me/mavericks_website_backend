@@ -6,21 +6,22 @@
         <div class="member text-center mb-3">
             <h2 class="gradient-text">Teams</h2>
         </div>
+        <h3 class="gradient-text">Batch 2K26</h3>
         <div class="row" id="project-grid">
-        {% for member in members %}
+        {% for member in batch26_members %}
         <div class="col-md-2 mb-4">
           <div class="card h-100">
             <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
             <div class="card-body text-center d-flex flex-column">
               <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
-              <p class="card-text">{{member.designation }}</p>
+              <p class="card-text">{{member.department }}</p>
               <p class="card-text">{{member.batch }}</p>
               <div class="mt-auto">
             <div class="social-links">
-              <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <!-- <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
               <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+              <a href="{{ member.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
               </div>
             </div>
@@ -29,22 +30,46 @@
         {% endfor %}
         </div>
 
-        <h3 class="gradient-text">EARLIER</h3>
+        <h3 class="gradient-text">Batch 2K25</h3>
         <div class="row">
-          {% for member in members_old %}
+          {% for member in batch25_members %}
           <div class="col-md-2 mb-4">
             <div class="card h-100">
               <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
               <div class="card-body text-center d-flex flex-column">
                 <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
-                <p class="card-text">{{member.designation }}</p>
+                <p class="card-text">{{member.department }}</p>
                 <p class="card-text">{{member.batch }}</p>
                 <div class="mt-auto">
               <div class="social-links">
-                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <!-- <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+                <a href="{{ member.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          </div>
+
+        <h3 class="gradient-text">Batch 2K27</h3>
+        <div class="row">
+          {% for member in batch27_members %}
+          <div class="col-md-2 mb-4">
+            <div class="card h-100">
+              <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
+                <p class="card-text">{{member.department }}</p>
+                <p class="card-text">{{member.batch }}</p>
+                <div class="mt-auto">
+              <div class="social-links">
+                <!-- <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+                <a href="{{ member.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
               </div>
                 </div>
               </div>
@@ -65,10 +90,10 @@
                   <p class="card-text">{{member.batch }}</p>
                   <div class="mt-auto">
                 <div class="social-links">
-                  <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <!-- <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                   <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="{{ member.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                   </div>
                 </div>
