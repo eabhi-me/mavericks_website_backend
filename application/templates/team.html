@@ -11,7 +11,8 @@
         {% for member in batch26_members %}
         <div class="col-md-2 mb-4">
           <div class="card h-100">
-            <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
+            <!-- <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}"> -->
+            <img src="{{ url_for('static', filename='team-img/profile.png') }}" class="team-img" alt="{{ member.title }}">
             <div class="card-body text-center d-flex flex-column">
               <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
               <p class="card-text">{{member.department }}</p>
@@ -35,7 +36,8 @@
           {% for member in batch25_members %}
           <div class="col-md-2 mb-4">
             <div class="card h-100">
-              <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
+              <!-- <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}"> -->
+              <img src="{{ url_for('static', filename='team-img/profile.png') }}" class="team-img" alt="{{ member.title }}">
               <div class="card-body text-center d-flex flex-column">
                 <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
                 <p class="card-text">{{member.department }}</p>
@@ -59,7 +61,7 @@
           {% for member in batch27_members %}
           <div class="col-md-2 mb-4">
             <div class="card h-100">
-              <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
+              <img src="{{ url_for('static', filename='team-img/profile.png') }}" class="team-img" alt="{{ member.title }}">
               <div class="card-body text-center d-flex flex-column">
                 <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
                 <p class="card-text">{{member.department }}</p>
@@ -83,7 +85,8 @@
             {% for member in diploma_members %}
             <div class="col-md-2 mb-4">
               <div class="card h-100">
-                <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}">
+                <!-- <img src="{{ url_for('static', filename=member.img_url) }}" class="team-img" alt="{{ member.title }}"> -->
+                <img src="{{ url_for('static', filename='team-img/profile.png') }}" class="team-img" alt="{{ member.title }}">
                 <div class="card-body text-center d-flex flex-column">
                   <h5 class="card-title text-secondary fw-bolder">{{ member.name }}</h5>
                   <p class="card-text">{{member.status }}</p>

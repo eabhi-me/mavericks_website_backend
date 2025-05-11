@@ -288,13 +288,14 @@ footer {
 
 /* Team member image styles */
 .team-img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   margin: 0.5rem auto;
   display: block;
-  max-width: 150px;
+  aspect-ratio: 1/1;
+  padding: 0;
 }
 
 /* Card styles for team members */
@@ -713,8 +714,8 @@ footer::before {
 }
 
 .team-carousel .team-img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   margin: 1rem auto;
