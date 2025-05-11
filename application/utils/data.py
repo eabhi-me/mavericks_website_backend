@@ -121,64 +121,39 @@ diploma_members = [
 
 iot_projects = [
     {
-        "name": "Line Following Robot (LFR)",
-        "description": "A robot that uses IR sensors to follow a line path autonomously."
+        "id": 1,
+        "description": "Leading the Way from Vision to Victory: Mavericks Shine at BFGI TechFest!",
+        "link": "https://example.com/bfgi-techfest-2024"
     },
     {
-        "name": "Human Following Robot (HFR)",
-        "description": "A robot that uses ultrasonic or PIR sensors to detect and follow a human."
+        "id": 2,
+        "description": "InnovTech : New Recruits Showcase Creativity, Turning Ideas into Reality!",
+        "link": "https://example.com/innovtech-2024"
     },
     {
-        "name": "Smart Door Lock",
-        "description": "An IoT-enabled door lock system controllable via smartphone or RFID."
+        "id": 3,
+        "description": "Victory Streak: Mavericks Shine at 2024 SLIET TechFest!",
+        "link": "https://example.com/sliet-techfest-2024"
     },
     {
-        "name": "Home Automation System",
-        "description": "Control lights, fans, and other appliances using a mobile app or voice assistant."
+        "id": 4,
+        "description": "Mavefest'24 : Mavericks Unleash Talent, Compete, Conquer, and Take Home Prizes!",
+        "link": "https://example.com/mavefest-2024"
     },
     {
-        "name": "Smart Dustbin",
-        "description": "An automatic trash bin that opens the lid when it detects motion using ultrasonic sensors."
+        "id": 5,
+        "description": "Leading the Way from Vision to Victory: Mavericks Shine at BFGI TechFest!",
+        "link": "https://example.com/bfgi-techfest-2024"
     },
     {
-        "name": "Smart Irrigation System",
-        "description": "Monitors soil moisture and automates watering using sensors and a microcontroller."
+        "id": 6,
+        "description": "InnovTech : New Recruits Showcase Creativity, Turning Ideas into Reality!",
+        "link": "https://example.com/innovtech-2024"
     },
     {
-        "name": "Temperature & Humidity Monitor",
-        "description": "Displays environmental data on an LCD and/or sends it to a mobile app using Wi-Fi."
-    },
-    {
-        "name": "Gas Leakage Detection System",
-        "description": "Detects harmful gases like LPG using MQ sensors and alerts via buzzer and SMS."
-    },
-    {
-        "name": "Smart Energy Meter",
-        "description": "Tracks electricity usage and sends real-time data to the cloud for monitoring."
-    },
-    {
-        "name": "RFID Attendance System",
-        "description": "Uses RFID tags to log attendance and updates data to a server or spreadsheet."
-    },
-    {
-        "name": "IoT Weather Station",
-        "description": "Collects temperature, humidity, and pressure data and uploads it to a web dashboard."
-    },
-    {
-        "name": "Voice Controlled Appliances",
-        "description": "Uses a voice assistant like Alexa or Google Assistant to control devices via Wi-Fi."
-    },
-    {
-        "name": "Obstacle Avoiding Robot",
-        "description": "A robot that navigates while avoiding obstacles using ultrasonic sensors."
-    },
-    {
-        "name": "IoT-based Heart Rate Monitor",
-        "description": "Monitors and sends heart rate data to a smartphone using Bluetooth or Wi-Fi."
-    },
-    {
-        "name": "Smart Parking System",
-        "description": "Detects available parking slots using IR sensors and updates them online."
+        "id": 8,
+        "description": "Mavefest'24 : Mavericks Unleash Talent, Compete, Conquer, and Take Home Prizes!",
+        "link": "https://example.com/mavefest-2024"
     }
 ]
 
@@ -187,41 +162,169 @@ events = [
     {
         "id": 1,
         "description": "Leading the Way from Vision to Victory: Mavericks Shine at BFGI TechFest!",
-        "link": "https://example.com/bfgi-techfest-2024"  
+        "link": "https://example.com/bfgi-techfest-2024"
     },
     {
         "id": 2,
         "description": "InnovTech : New Recruits Showcase Creativity, Turning Ideas into Reality!",
-        "link": "https://example.com/innovtech-2024"  
+        "link": "https://example.com/innovtech-2024"
     },
     {
         "id": 3,
         "description": "Victory Streak: Mavericks Shine at 2024 SLIET TechFest!",
-        "link": "https://example.com/sliet-techfest-2024"  
+        "link": "https://example.com/sliet-techfest-2024"
     },
     {
         "id": 4,
         "description": "Mavefest'24 : Mavericks Unleash Talent, Compete, Conquer, and Take Home Prizes!",
-        "link": "https://example.com/mavefest-2024"  
+        "link": "https://example.com/mavefest-2024"
     },
     {
-        "id": 5,  # Repeated event (same as id 1)
+        "id": 5,
         "description": "Leading the Way from Vision to Victory: Mavericks Shine at BFGI TechFest!",
-        "link": "https://example.com/bfgi-techfest-2024"  
+        "link": "https://example.com/bfgi-techfest-2024"
     },
     {
-        "id": 6,  # Repeated event (same as id 2)
+        "id": 6,
         "description": "InnovTech : New Recruits Showcase Creativity, Turning Ideas into Reality!",
-        "link": "https://example.com/innovtech-2024"  
+        "link": "https://example.com/innovtech-2024"
     },
     {
-        "id": 7,  # Repeated event (same as id 3)
+        "id": 7,
         "description": "Victory Streak: Mavericks Shine at 2024 SLIET TechFest!",
-        "link": "https://example.com/sliet-techfest-2024"  
+        "link": "https://example.com/sliet-techfest-2024"
     },
     {
-        "id": 8,  # Repeated event (same as id 4)
+        "id": 8,
         "description": "Mavefest'24 : Mavericks Unleash Talent, Compete, Conquer, and Take Home Prizes!",
-        "link": "https://example.com/mavefest-2024"  
+        "link": "https://example.com/mavefest-2024"
     }
+]
+
+gallery = [
+  {
+    "id": 1,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986761/IMG_20241019_181838_dglaf6.jpg",
+    "short_alt": "Field image 1"
+  },
+  {
+    "id": 2,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986757/IMG_5519_wnwpp6.jpg",
+    "short_alt": "Field image 2"
+  },
+  {
+    "id": 3,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986703/IMG_5528_nemlw1.jpg",
+    "short_alt": "Field image 3"
+  },
+  {
+    "id": 4,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986699/IMG-20250222-WA0083_vwsxgx.jpg",
+    "short_alt": "Group photo"
+  },
+  {
+    "id": 5,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986690/IMG_20240318_111718194_HDR_AE_xhzz10.jpg",
+    "short_alt": "Field close-up"
+  },
+  {
+    "id": 6,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986677/1000125267_mstyfp.jpg",
+    "short_alt": "Plant detail"
+  },
+  {
+    "id": 7,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986629/IMG-20241019-WA0009_oq4gop.jpg",
+    "short_alt": "Team working"
+  },
+  {
+    "id": 8,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986623/IMG-20241019-WA0011_vqo4fq.jpg",
+    "short_alt": "Equipment setup"
+  },
+  {
+    "id": 9,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986588/IMG_5505_bmmd4r.jpg",
+    "short_alt": "Field overview"
+  },
+  {
+    "id": 10,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986579/IMG_5422_gfauzs.jpg",
+    "short_alt": "Plant identification"
+  },
+  {
+    "id": 11,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986497/IMG_20240127_113224_hslpps.jpg",
+    "short_alt": "Field inspection"
+  },
+  {
+    "id": 12,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986453/PXL_20240315_113346418_i0chep.jpg",
+    "short_alt": "Technology demo"
+  },
+  {
+    "id": 13,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746986454/IMG-20240518-WA0058_ukcmup.jpg",
+    "short_alt": "Team meeting"
+  },
+  {
+    "id": 14,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985354/galleryPic3_-_Copy_bihmep.jpg",
+    "short_alt": "Gallery photo 1"
+  },
+  {
+    "id": 15,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985330/sliet_mavericks_lkj11h.png",
+    "short_alt": "Team logo"
+  },
+  {
+    "id": 16,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985320/galleryPic1_-_Copy_yfjkjn.jpg",
+    "short_alt": "Gallery photo 2"
+  },
+  {
+    "id": 17,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985310/projectPic4_l6aje8.jpg",
+    "short_alt": "Project photo 1"
+  },
+  {
+    "id": 18,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985301/WhatsApp_Image_2022-11-13_at_10.02.24_PM_syfvqr.jpg",
+    "short_alt": "Group discussion"
+  },
+  {
+    "id": 19,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985295/projectPic2_h38yse.jpg",
+    "short_alt": "Project photo 2"
+  },
+  {
+    "id": 20,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985292/mavericks_2_kf3ft2.png",
+    "short_alt": "Team branding"
+  },
+  {
+    "id": 21,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985290/projectPic3_otoybn.jpg",
+    "short_alt": "Project photo 3"
+  },
+  {
+    "id": 22,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985270/projectPic2_3_mhxibs.jpg",
+    "short_alt": "Project photo 4"
+  },
+  {
+    "id": 23,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985255/fourwheel_-_Copy_hexcdr.jpg",
+    "short_alt": "Vehicle prototype"
+  },
+  {
+    "id": 24,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985249/galleryPic2_-_Copy_d3trif.jpg",
+    "short_alt": "Gallery photo 3"
+  },
+  {
+    "id": 25,
+    "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1746985229/line_follwing_voilqk.jpg",
+    "short_alt": "Line following robot"
+  }
 ]

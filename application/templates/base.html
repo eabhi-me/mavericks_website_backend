@@ -62,8 +62,8 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top myNavClass animate-fade-in">
           <div class="container-fluid align-items-center">
             <a class="navbar-brand logo-txt fw-bold fs-3" href="{{ url_for('home') }}">
-              <i class="fas fa-microchip me-2 ms-2 mav-color"></i>
-              <!-- <img src="{{ url_for('static', filename='images/mav-banner.png') }}" alt="Mavericks Logo" class="footer-logo"> -->
+              <!-- <i class="fas fa-microchip me-2 ms-2 mav-color"></i> -->
+              <img src="{{ url_for('static', filename='images/mavericks-removebg-preview.png') }}" alt="Mavericks Logo">
               <span class="mav-color">Mavericks</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@
                   <a class="nav-link animate-slide-in" href="{{ url_for('contact') }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link animate-slide-in" href="{{ url_for('gallery') }}">Gallery</a>
+                  <a class="nav-link animate-slide-in" href="{{ url_for('gallery_route') }}">Gallery</a>
                 </li>
                 {% if current_user.is_authenticated %}
                   <li class="nav-item">
@@ -130,7 +130,7 @@
             <div class="footer-brand">
               <span
                 >Mavericks<br />
-                Born To be Different
+                Born To Be Different
               </span>
             </div>
           </div>
@@ -148,17 +148,20 @@
           <div class="col-md-4 text-center">
             <h5>Connect With Us</h5>
             <p><i class="fas fa-envelope me-2"></i>maverick@sliet.ac.in</p>
-            <p><i class="fas fa-phone me-2"></i>+91 xxxxxxxxxx</p>
+            <!-- <p><i class="fas fa-phone me-2"></i>+91 xxxxxxxxxx</p> -->
             <div class="social">
-              <a href="#"><i class="fa-brands fa-github social-icon-me"></i></a>
-              <a href="#"
+              <!-- <a href="#"><i class="fa-brands fa-github social-icon-me"></i></a> -->
+              <a href="https://www.linkedin.com/company/team-mavericks/"
                 ><i class="fa-brands fa-linkedin social-icon-me"></i
               ></a>
-              <a href="#"
+              <a href="https://instagram.com/mavericks_sliet?igshid=NTdlMDg3MTY="
                 ><i class="fa-brands fa-instagram social-icon-me"></i
               ></a>
-              <a href="#"
+              <!-- <a href="#"
                 ><i class="fa-brands fa-youtube social-icon-me"></i
+              ></a> -->
+              <a href="https://www.facebook.com/mavericks.sliet"
+                ><i class="fa-brands fa-facebook social-icon-me"></i
               ></a>
             </div>
             <div class="text-center mt-3">

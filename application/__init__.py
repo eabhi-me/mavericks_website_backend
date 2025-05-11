@@ -71,3 +71,4 @@ def load_user(user_id):
 
 from application.apis import *
 from application.admin_api import *
+from application.admin_edit import *  # Import the new admin_edit routes

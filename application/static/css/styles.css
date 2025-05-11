@@ -699,6 +699,11 @@ footer::before {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 .team-carousel .card:hover {
@@ -708,13 +713,15 @@ footer::before {
 }
 
 .team-carousel .team-img {
-  width: 100%;
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
   margin: 1rem auto;
   display: block;
   transition: all 0.3s ease;
+  aspect-ratio: 1/1;
+  padding: 0;
 }
 
 .team-carousel .card:hover .team-img {
@@ -722,8 +729,8 @@ footer::before {
 }
 
 .team-carousel .card-body {
-  padding: 1rem;
-  text-align: center;
+  width: 100%;
+  padding-top: 0.5rem;
 }
 
 .team-carousel .card-title {
@@ -1037,3 +1044,76 @@ footer::before {
 /* .flash-msg{
     width: 80%;
 } */
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery Styles */
+.gallery-item {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.gallery-item.loaded img {
+    opacity: 1;
+}
+
+.image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item.loaded .image-placeholder {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#gallery-loader {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-loader .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+#gallery-grid {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#gallery-grid[style*="display: flex"] {
+    opacity: 1;
+}

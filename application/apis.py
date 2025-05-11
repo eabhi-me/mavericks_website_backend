@@ -3,7 +3,7 @@ from flask import request, jsonify
 from application import app, mail
 from bson import ObjectId
 from config.mdatabase import members_collection, projects_collection
-from .utils.data import coordintors, iot_projects, members, events, members_old, diploma_members
+from .utils.data import coordintors, iot_projects, members, events, members_old, diploma_members, gallery
 from .utils.member_data import batch25_members, batch26_members, batch27_members, ICD_members
 from .form import LoginForm
 from flask_login import login_user, logout_user, current_user, login_required
@@ -35,12 +35,9 @@ def project():
 def team():
     return render_template('team.html', batch25_members=batch25_members, batch26_members=batch26_members, batch27_members=batch27_members, diploma_members=ICD_members)
 
-
-
 @app.route('/gallery')
-def gallery():
-    total_images = 10
-    return render_template('gallery.html',total_images=total_images)
+def gallery_route():
+    return render_template('gallery.html', gallery=gallery)
 
 @app.route('/contact-send', methods=['GET', 'POST'])
 def contact_send():

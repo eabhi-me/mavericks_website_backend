@@ -2,18 +2,65 @@
 
 {% block content %}
     <!--############## Gallery ##################-->
-    <div class="container mt-5 mb-5"  style="padding-top: 60px;">
+    <div class="container mt-5 mb-5" style="padding-top: 60px;">
         <div class="member text-center mb-3">
             <h2 class="gradient-text">Gallery</h2>
         </div>
-        <div class="row">
-            {% for i in range(1, total_images + 1) %}
+        
+        <!-- Loading Section -->
+        <div id="gallery-loader" class="text-center mb-4">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Loading gallery images...</p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-grid" class="row" style="display: none;">
+            {% for image in gallery %}
             <div class="col-6 col-md-3 mb-4">
-                <img src="{{ url_for('static', filename='gallery/gallery' ~ i ~ '.jpg') }}" alt="Gallery Image {{ i }}" class="img-fluid rounded" style="width: 300px; height: 250px; object-fit: cover;">
+                <div class="gallery-item">
+                    <img src="{{ image.img_url }}" 
+                         alt="{{ image.short_alt }}" 
+                         class="img-fluid rounded gallery-img"
+                         loading="lazy"
+                         data-placeholder="{{ url_for('static', filename='images/placeholder.jpg') }}">
+                    <div class="image-placeholder">
+                        <div class="spinner-border spinner-border-sm text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             {% endfor %}
         </div>
-        
-    </div>        
- 
+    </div>
+
+    <script>
+        // Handle image loading
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.gallery-item img');
+            const placeholderUrl = '{{ url_for("static", filename="images/placeholder.jpg") }}';
+
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.parentElement.classList.add('loaded');
+                });
+
+                img.addEventListener('error', function() {
+                    this.src = placeholderUrl;
+                });
+            });
+
+            // Show gallery grid and hide loader when all images are loaded
+            window.addEventListener('load', function() {
+                const loader = document.getElementById('gallery-loader');
+                const grid = document.getElementById('gallery-grid');
+                
+                // Hide loader and show grid
+                loader.style.display = 'none';
+                grid.style.display = 'flex';
+            });
+        });
+    </script>
 {% endblock %}
