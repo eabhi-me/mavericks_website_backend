@@ -7,22 +7,22 @@ coordintors = [
 
 members = [
     {'name': 'Teja Reddy', 'designation': 'Student Coordinator', 'img_url': 'team-img/KOYEE TEJA REDDY.jpg', 'batch': '2022-2026','branch':'GCT'},
-    {'name': 'Ankita Singh', 'designation': 'Co-Coordinator', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
+    {'name': 'Ankita Singh', 'designation': 'Co-Coordinator', 'img_url': 'team-img/Ankita Singh.jpg', 'batch': '2023-2027','branch':'GEE'},
     {'name': 'Devansh', 'designation': 'Event Coordinator', 'img_url': 'team-img/DEVANSH.jpg', 'batch': '2022-2026','branch':'GME'},
     {'name': 'Ankit Kumar', 'designation': 'Projects Head', 'img_url': 'team-img/2010417 - Ankit Kumar Sha.jpg', 'batch': '2023-2027','branch':'GEE'},
-    {'name': 'Prashant Mishra', 'designation': 'Technical Head', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GEE'},
+    {'name': 'Prashant Mishra', 'designation': 'Technical Head', 'img_url': 'team-img/Prahant Mishra.jpg', 'batch': '2023-2027','branch':'GEE'},
     {'name': 'Sandarbh Kumar', 'designation': 'Resource Head', 'img_url': 'team-img/SANDARBH KUMAR.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Akanksha Armo', 'designation': 'Jr.Student Coordinator', 'img_url': 'team-img/AKANKSHA ARMO.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Aadarsh Nath', 'designation': 'Documentation', 'img_url': 'team-img/Aadarsh Nath.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Piyush Gupta', 'designation': 'Fund Manager', 'img_url': 'team-img/PIYUSH GUPTA.jpg', 'batch': '2023-2027','branch':'GEC'},
-    {'name': 'Kumar Sparsh', 'designation': 'Social Media', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCS'},
+    {'name': 'Kumar Sparsh', 'designation': 'Social Media', 'img_url': 'team-img/Kumar Sparsh.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Abhishek Yadav', 'designation': 'Website Head', 'img_url': 'team-img/ABHISHEK YADAV.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Dhairya Baranwal', 'designation': 'Public Relations', 'img_url': 'team-img/DHAIRYA BARANWAL.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Vishal Kumar', 'designation': 'Assets', 'img_url': 'team-img/VISHAL.jpg', 'batch': '2023-2027','branch':'GME'},
     {'name': 'Rashim Malhotra', 'designation': 'Executives', 'img_url': 'team-img/RASHIM MALHOTRA.png', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Anisha Kumari', 'designation': 'Executives', 'img_url': 'team-img/ANISHA KUMARI.jpg', 'batch': '2023-2027','branch':'GCS'},
     {'name': 'Priyanshu Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch': '2023-2027','branch':'GCS'},
-    {'name': 'Ankit Kumar', 'designation': 'Executives', 'img_url': 'team-img/profile.png', 'batch':'2023-2027','branch':'GEC'}
+    {'name': 'Ankit Kumar', 'designation': 'Executives', 'img_url': 'team-img/Ankit Kumar.jpg', 'batch':'2023-2027','branch':'GEC'}
 ]
 
 
@@ -119,69 +119,172 @@ diploma_members = [
     }
 ]
 
-iot_projects = [
-    {
-        "name": "Line Following Robot (LFR)",
-        "description": "A robot that uses IR sensors to follow a line path autonomously."
-    },
-    {
-        "name": "Human Following Robot (HFR)",
-        "description": "A robot that uses ultrasonic or PIR sensors to detect and follow a human."
-    },
-    {
-        "name": "Smart Door Lock",
-        "description": "An IoT-enabled door lock system controllable via smartphone or RFID."
-    },
-    {
-        "name": "Home Automation System",
-        "description": "Control lights, fans, and other appliances using a mobile app or voice assistant."
-    },
-    {
-        "name": "Smart Dustbin",
-        "description": "An automatic trash bin that opens the lid when it detects motion using ultrasonic sensors."
-    },
-    {
-        "name": "Smart Irrigation System",
-        "description": "Monitors soil moisture and automates watering using sensors and a microcontroller."
-    },
-    {
-        "name": "Temperature & Humidity Monitor",
-        "description": "Displays environmental data on an LCD and/or sends it to a mobile app using Wi-Fi."
-    },
-    {
-        "name": "Gas Leakage Detection System",
-        "description": "Detects harmful gases like LPG using MQ sensors and alerts via buzzer and SMS."
-    },
-    {
-        "name": "Smart Energy Meter",
-        "description": "Tracks electricity usage and sends real-time data to the cloud for monitoring."
-    },
-    {
-        "name": "RFID Attendance System",
-        "description": "Uses RFID tags to log attendance and updates data to a server or spreadsheet."
-    },
-    {
-        "name": "IoT Weather Station",
-        "description": "Collects temperature, humidity, and pressure data and uploads it to a web dashboard."
-    },
-    {
-        "name": "Voice Controlled Appliances",
-        "description": "Uses a voice assistant like Alexa or Google Assistant to control devices via Wi-Fi."
-    },
-    {
-        "name": "Obstacle Avoiding Robot",
-        "description": "A robot that navigates while avoiding obstacles using ultrasonic sensors."
-    },
-    {
-        "name": "IoT-based Heart Rate Monitor",
-        "description": "Monitors and sends heart rate data to a smartphone using Bluetooth or Wi-Fi."
-    },
-    {
-        "name": "Smart Parking System",
-        "description": "Detects available parking slots using IR sensors and updates them online."
-    }
+iot_projects_temp = [
+  {
+    "name": "Line Following Robot (LFR)",
+    "description": "A robot that uses IR sensors to follow a line path autonomously.",
+    "img_url": "https://example.com/images/line_following_robot.jpg"
+  },
+  {
+    "name": "Human Following Robot (HFR)",
+    "description": "A robot that uses ultrasonic or PIR sensors to detect and follow a human.",
+    "img_url": "https://example.com/images/human_following_robot.jpg"
+  },
+  {
+    "name": "Smart Door Lock",
+    "description": "An IoT-enabled door lock system controllable via smartphone or RFID.",
+    "img_url": "https://example.com/images/smart_door_lock.jpg"
+  },
+  {
+    "name": "Home Automation System",
+    "description": "Control lights, fans, and other appliances using a mobile app or voice assistant.",
+    "img_url": "https://example.com/images/home_automation_system.jpg"
+  },
+  {
+    "name": "Smart Dustbin",
+    "description": "An automatic trash bin that opens the lid when it detects motion using ultrasonic sensors.",
+    "img_url": "https://example.com/images/smart_dustbin.jpg"
+  },
+  {
+    "name": "Smart Irrigation System",
+    "description": "Monitors soil moisture and automates watering using sensors and a microcontroller.",
+    "img_url": "https://example.com/images/smart_irrigation_system.jpg"
+  },
+  {
+    "name": "Temperature & Humidity Monitor",
+    "description": "Displays environmental data on an LCD and/or sends it to a mobile app using Wi-Fi.",
+    "img_url": "https://example.com/images/temperature_humidity_monitor.jpg"
+  },
+  {
+    "name": "Gas Leakage Detection System",
+    "description": "Detects harmful gases like LPG using MQ sensors and alerts via buzzer and SMS.",
+    "img_url": "https://example.com/images/gas_leakage_detection.jpg"
+  },
+  {
+    "name": "Smart Energy Meter",
+    "description": "Tracks electricity usage and sends real-time data to the cloud for monitoring.",
+    "img_url": "https://example.com/images/smart_energy_meter.jpg"
+  },
+  {
+    "name": "RFID Attendance System",
+    "description": "Uses RFID tags to log attendance and updates data to a server or spreadsheet.",
+    "img_url": "https://example.com/images/rfid_attendance_system.jpg"
+  },
+  {
+    "name": "IoT Weather Station",
+    "description": "Collects temperature, humidity, and pressure data and uploads it to a web dashboard.",
+    "img_url": "https://example.com/images/iot_weather_station.jpg"
+  },
+  {
+    "name": "Voice Controlled Appliances",
+    "description": "Uses a voice assistant like Alexa or Google Assistant to control devices via Wi-Fi.",
+    "img_url": "https://example.com/images/voice_controlled_appliances.jpg"
+  },
+  {
+    "name": "Obstacle Avoiding Robot",
+    "description": "A robot that navigates while avoiding obstacles using ultrasonic sensors.",
+    "img_url": "https://example.com/images/obstacle_avoiding_robot.jpg"
+  },
+  {
+    "name": "IoT-based Heart Rate Monitor",
+    "description": "Monitors and sends heart rate data to a smartphone using Bluetooth or Wi-Fi.",
+    "img_url": "https://example.com/images/iot_heart_rate_monitor.jpg"
+  },
+  {
+    "name": "Smart Parking System",
+    "description": "Detects available parking slots using IR sensors and updates them online.",
+    "img_url": "https://example.com/images/smart_parking_system.jpg"
+  }
 ]
 
+
+
+iot_projects = [
+    {
+      "id": 1,
+      "project_name": "3D Printer",
+      "short_description": "A machine that builds 3D objects layer by layer from digital designs.",
+      "detailed_description": "A 3D printer creates objects by precisely depositing melted plastic or other materials in thin layers until the final shape is formed. The process begins with a 3D model from CAD software, converted into G-code instructions. Widely used in engineering, education, product design, and medical fields for rapid prototyping.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747288993/3D_printer_1_wg31j0.webp"
+    },
+    {
+      "id": 2,
+      "project_name": "Autonomous Drone with Charging Station",
+      "short_description": "Self-navigating drone that automatically returns to its charging base.",
+      "detailed_description": "Equipped with sensors and GPS, this drone performs tasks like surveillance or delivery, then autonomously returns to a custom charging station. The station uses landing detection and charging contacts for hands-off recharging, combining flight control, automation, and power management.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289009/drone_orljbx.webp"
+    },
+    {
+      "id": 3,
+      "project_name": "Sisyphus Table",
+      "short_description": "Kinetic art table that draws patterns in sand using a robotic ball.",
+      "detailed_description": "Inspired by Greek mythology, this table uses stepper motors and magnets controlled by a microcontroller to move a metal ball that creates evolving sand designs. Blends engineering and art into an automated kinetic sculpture.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289010/Sisyphus-table_bhvmwc.webp"
+    },
+    {
+      "id": 4,
+      "project_name": "Multipurpose Autonomous UAV",
+      "short_description": "Versatile self-flying drone for various applications.",
+      "detailed_description": "This UAV performs autonomous navigation, environmental monitoring, payload delivery, and data collection using GPS and onboard sensors. Suitable for agriculture, disaster response, and surveillance with programmable route following or real-time adaptation.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289015/UAV_hp3nuv.webp"
+    },
+    {
+      "id": 5,
+      "project_name": "Line Following Robot (LFR)",
+      "short_description": "Robot that autonomously follows a marked path.",
+      "detailed_description": "Uses IR sensors to detect a line (typically black on white) and follows it via microcontroller commands to DC motors. Components include Arduino, L298N motor driver, and IR sensors. Demonstrates basic robotics and sensor integration.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747288999/LFR_xndds5.webp"
+    },
+    {
+      "id": 6,
+      "project_name": "Obstacle Avoiding Robot (OAR)",
+      "short_description": "Autonomous robot that navigates around obstacles.",
+      "detailed_description": "Uses ultrasonic sensors (HC-SR04) to detect objects and an Arduino to control motors for collision avoidance. The sensor measures sound wave reflection time to determine distance, triggering evasive maneuvers.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747288998/HFR2_uldn9w.webp"
+    },
+    {
+      "id": 7,
+      "project_name": "Human Following Robot (HFR)",
+      "short_description": "Robot that tracks and follows a person.",
+      "detailed_description": "Uses ultrasonic sensors or cameras to maintain a fixed distance from a human. The microcontroller processes sensor data to adjust movement via motors, enabling persistent tracking for applications like luggage carriers.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289007/HFR1_fi8dur.webp"
+    },
+    {
+      "id": 8,
+      "project_name": "War Bot",
+      "short_description": "Competitive combat robot for robotics battles.",
+      "detailed_description": "Remote-controlled robot with high-torque motors and weapons (e.g., blades, lifters) for competitions. Features durable metal chassis and emphasizes mechanical design, control systems, and safety in adversarial scenarios.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289012/war_bot2_dv401z.webp"
+    },
+    {
+      "id": 9,
+      "project_name": "RC Plane",
+      "short_description": "Remotely controlled fixed-wing aircraft.",
+      "detailed_description": "Lightweight foam/balsa plane with electric motor and servo-controlled surfaces (rudder, elevator, ailerons). Teaches aerodynamics and radio communication, usable for hobby flying or as an automation platform.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289016/RC_plane_fzhazx.webp"
+    },
+    {
+      "id": 10,
+      "project_name": "Soccer Bot",
+      "short_description": "Autonomous robot that plays soccer.",
+      "detailed_description": "Uses IR/camera sensors to track a ball, navigate the field, and kick toward a goal. Combines computer vision, motor control, and strategy for dynamic competition environments.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289007/soccer_bot_u3hdud.webp"
+    },
+    {
+      "id": 11,
+      "project_name": "Hovercraft",
+      "short_description": "Air-cushion vehicle for low-friction movement.",
+      "detailed_description": "Glides on an air cushion created by lift fans, enabling movement over land/water. Demonstrates fluid dynamics and unconventional locomotion using thrust motors/rudders for control.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289013/hovercraft_gyyutk.webp"
+    },
+    {
+      "id": 12,
+      "project_name": "Truss",
+      "short_description": "Lightweight triangular framework for structural support.",
+      "detailed_description": "Interconnected triangle design distributes loads efficiently in bridges, towers, or robotic arms. Teaches physics and mechanical design principles for stress-resistant structures.",
+      "img_url": "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1747289012/truss_qfdbqo.webp"
+    }
+  ]
 
 
 events = [

@@ -9,11 +9,30 @@
       {% for project in iot_projects %}
       <div class="col-md-3 mb-4 d-flex align-items-stretch">
         <div class="card h-100">
-          <img src="{{ project.image_direct }}" class="card-img-top" alt="{{ project.title }}">
+          <img src="{{ project.img_url }}" class="card-img-top-notround" alt="{{ project.title }}">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-dark text-primary-emphasis fw-bolder">{{ project.name }}</h5>
-            <p class="card-text">{{ project.description }}</p>
-            <a href="{{ project.details_url }}" class="btn btn-primary btn-sm mt-auto ">More Details</a>
+            <h5 class="card-title text-dark text-primary-emphasis fw-bolder">{{ project.project_name }}</h5>
+            <p class="card-text">{{ project.short_description }}</p>
+            <button type="button" class="btn btn-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal{{ project.id }}">
+              More Details
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="projectModal{{ project.id }}" tabindex="-1" aria-labelledby="projectModalLabel{{ project.id }}" aria-hidden="true">
+              <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel{{ project.id }}">{{ project.project_name }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                {{ project.detailed_description }}
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+              </div></div>
           </div>
         </div>
       </div>
